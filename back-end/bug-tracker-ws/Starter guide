@@ -3,3 +3,4 @@ Guide to start :
 	-Add dependency
 	-Add application context
 	-Create Entities, DTO, Repositories
+	-Adding JPA annotations to Entities

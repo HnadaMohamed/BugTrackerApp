@@ -32,6 +32,9 @@ public class User implements Serializable {
 	
 	@Column(nullable = false )
 	private String email;
+	
+	@Column(nullable = false )
+	private String password;
 
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idRol", insertable = false, updatable = false)
@@ -103,7 +106,13 @@ public class User implements Serializable {
 	public void setRole(Role role) {
 		this.role = role;
 	}
-
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}	
+	
 	
 	
 	
