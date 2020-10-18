@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.adanh.ws.entity.Project;
 
 @Repository
-public interface ProjectRepository extends JpaRepository<Project, Long> {
+public interface ProjectRepository extends JpaRepository<Project, Integer> {
 	
 
 }

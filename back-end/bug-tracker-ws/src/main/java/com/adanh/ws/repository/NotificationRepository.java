@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.adanh.ws.entity.Notification;
 
 @Repository
-public interface NotificationRepository extends JpaRepository<Notification, Long> {
+public interface NotificationRepository extends JpaRepository<Notification, Integer> {
 	
 
 }

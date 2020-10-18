@@ -1,4 +1,5 @@
 Guide to start : 
--create project 
--add dependency
--add application context
+	-Create project 
+	-Add dependency
+	-Add application context
+	-Create Entities, DTO, Repositories

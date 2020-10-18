@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.adanh.ws.entity.Bug;
 
 @Repository
-public interface BugRepository extends JpaRepository<Bug, Long> {
+public interface BugRepository extends JpaRepository<Bug, Integer> {
 	
 
 }
