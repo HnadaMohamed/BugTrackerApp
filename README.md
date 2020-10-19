@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img width="50%" src="https://miro.medium.com/max/700/1*I9paH_iKTmSeYs1HzRzuag.png">
+  <img width="35%" src="https://miro.medium.com/max/700/1*I9paH_iKTmSeYs1HzRzuag.png">
 </p>
 
  <h1 align="center">BugTrackerApp</h1>
