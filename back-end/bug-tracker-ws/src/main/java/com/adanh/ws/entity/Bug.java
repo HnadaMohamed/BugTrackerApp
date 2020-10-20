@@ -56,24 +56,24 @@ public class Bug implements Serializable{
 	private Set<BugHistory> BugHistoryies = new HashSet<>(0);
 	
 	@ManyToMany(fetch = FetchType.LAZY )
-	private Set<User> developers = new HashSet<>(0);
+	private Set<UserApp> developers = new HashSet<>(0);
 	
 	@ManyToMany(fetch = FetchType.LAZY )
-	private Set<User> issuers = new HashSet<>(0);
+	private Set<UserApp> issuers = new HashSet<>(0);
 	
-	public Set<User> getDevelopers() {
+	public Set<UserApp> getDevelopers() {
 		return developers;
 	}
 
-	public void setDevelopers(Set<User> developers) {
+	public void setDevelopers(Set<UserApp> developers) {
 		this.developers = developers;
 	}
 
-	public Set<User> getIssuers() {
+	public Set<UserApp> getIssuers() {
 		return issuers;
 	}
 
-	public void setIssuers(Set<User> issuers) {
+	public void setIssuers(Set<UserApp> issuers) {
 		this.issuers = issuers;
 	}
 

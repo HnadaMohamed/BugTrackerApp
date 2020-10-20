@@ -39,30 +39,30 @@ public class BugHistory implements Serializable {
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idUser", insertable = false, updatable = false)
-	private User issuer;
+	private UserApp issuer;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idUser", insertable = false, updatable = false)
-	private User developer;
+	private UserApp developer;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "idProject", insertable = false, updatable = false)
 	private Project project;
 
 	
-	public User getIssuer() {
+	public UserApp getIssuer() {
 		return issuer;
 	}
 
-	public void setIssuer(User issuer) {
+	public void setIssuer(UserApp issuer) {
 		this.issuer = issuer;
 	}
 
-	public User getDeveloper() {
+	public UserApp getDeveloper() {
 		return developer;
 	}
 
-	public void setDeveloper(User developer) {
+	public void setDeveloper(UserApp developer) {
 		this.developer = developer;
 	}
 

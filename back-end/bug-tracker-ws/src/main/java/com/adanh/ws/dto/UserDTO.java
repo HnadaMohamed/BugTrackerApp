@@ -3,7 +3,6 @@ package com.adanh.ws.dto;
 
 public class UserDTO {
 	
-	
 	private String firstName;
 	
 	private String lastName;
@@ -11,7 +10,7 @@ public class UserDTO {
 	private String email;
 	
 	private String password;
-
+	
 	
 	public String getFirstName() {
 		return firstName;
@@ -49,6 +48,5 @@ public class UserDTO {
 	public String toString() {
 		return getFirstName() + "-" + getLastName() + "-" + getEmail() + "-" + getPassword() + " ";
 	}
-	
 	
 }

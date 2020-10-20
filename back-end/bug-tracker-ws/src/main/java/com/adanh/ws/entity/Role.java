@@ -25,13 +25,13 @@ public class Role implements Serializable {
 	private String nameRole;
 
 	@OneToMany(fetch = FetchType.LAZY ,mappedBy = "role")
-	private Set<User> users = new HashSet<>(0);
+	private Set<UserApp> users = new HashSet<>(0);
 
-	public Set<User> getUsers() {
+	public Set<UserApp> getUsers() {
 		return users;
 	}
 
-	public void setUsers(Set<User> users) {
+	public void setUsers(Set<UserApp> users) {
 		this.users = users;
 	}
 

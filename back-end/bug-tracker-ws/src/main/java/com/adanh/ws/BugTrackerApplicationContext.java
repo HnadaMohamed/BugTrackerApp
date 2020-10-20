@@ -6,7 +6,6 @@ import org.springframework.context.ApplicationContextAware;
 
 public class BugTrackerApplicationContext implements ApplicationContextAware{
 
-	@SuppressWarnings("unused")
 	private static ApplicationContext CONTEXT;
 	
 	@Override
@@ -14,6 +13,10 @@ public class BugTrackerApplicationContext implements ApplicationContextAware{
 			throws BeansException {
 		CONTEXT= applicationContext;
 		
+	}
+	
+	public static Object getBean(String beanName) {
+		return CONTEXT.getBean(beanName);		
 	}
 
 }

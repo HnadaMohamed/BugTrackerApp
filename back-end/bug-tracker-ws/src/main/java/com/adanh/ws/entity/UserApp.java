@@ -15,8 +15,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-@Entity(name="Users")
-public class User implements Serializable {
+@Entity(name="UserApp")
+public class UserApp implements Serializable {
 	
 	private static final long serialVersionUID = -790305251259552231L;
 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
