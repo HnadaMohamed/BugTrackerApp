@@ -55,7 +55,10 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 	     res.addHeader(SecurityConstant.HEADER_STRING, SecurityConstant.TOKEN_PREFIX + token);
 	     
 	    } 
+
 	 
-	
+	 
+	 
+	 
 	
 }
