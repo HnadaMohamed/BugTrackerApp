@@ -6,3 +6,11 @@ Guide to start :
 	-Adding JPA annotations to Entities.
 	-Create User(Service,Repo,Controller).
 	-Add Authentication Filter and generate token (Spring Security + Jwt).
+	
+	
+	
+Generate war and deploy in docker container to start : 
+	- generate war 
+	- navigate to project folder and run : docker-compose up --build
+	- url localhost/ warName 
+	
