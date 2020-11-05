@@ -38,6 +38,6 @@ public class UserController {
 
 	@GetMapping("/welcome")
 	public String index() {
-	    return "Welcome";
+	    return "Welcome jenkins";
 	}
 }
