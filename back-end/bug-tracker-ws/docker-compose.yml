@@ -41,6 +41,9 @@ services:
     build: ./
     ports:
       - "8080:8080"
+      
+    volumes:
+      - './tomcat-users.xml:/opt/bitnami/tomcat/conf/tomcat-users.xml:rw'
     networks:
       - mynet
     links:
@@ -68,6 +71,7 @@ networks:
   mynet: 
     driver: bridge
 volumes:
+  tomcat_data:
   postgres-data:
   pgadmin:
   
