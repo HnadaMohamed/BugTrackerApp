@@ -10,14 +10,19 @@ Guide to start :
 	
 	
 Deployment in DigitalOcean : 
+
 	- Install Putty/puttygen : to connect to the digitalocean ubunto server 
 	- Create a repo in Github with docker files 
 	- Follow these steps : https://www.youtube.com/watch?v=it1AJA7y9GE
 	- Open putty : fill hostName + SSh>Auth>Browse with shh that you created with puttygen. + fill Data>login details with : root then hit OK.
 	- Click open : you are in the server now.
+
 	- clone the github repo 
-	- acces the root of the project and run docker-ompose up --build 
-	- done .
+	- Acces the root of the project and run docker-ompose up --build 
+	- Go to jenkins in :8081 and craete a job with the info in the screenshot : auto deploy job jenkins.png 
+	- Change the host of the tomcat setver to the container IP in the job info .
+
+	All setup now , just push your changes in the git repo and see your changes live after deployment .
 	
 	
 	
