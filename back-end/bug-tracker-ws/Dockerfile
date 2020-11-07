@@ -3,8 +3,8 @@
 FROM tomcat:jdk8
 
 # Move .dist to webapps
-#  RUN mv /usr/local/tomcat/webapps/ /usr/local/tomcat/webappstemp/
-#  RUN mv /usr/local/tomcat/webapps.dist/ /usr/local/tomcat/webapps/
+  RUN mv /usr/local/tomcat/webapps/ /usr/local/tomcat/webappstemp/
+  RUN mv /usr/local/tomcat/webapps.dist/ /usr/local/tomcat/webapps/
 
 # COPY my war to  docker-tomcat
 COPY target/bug-tracker-ws-0.1.war /usr/local/tomcat/webapps/
