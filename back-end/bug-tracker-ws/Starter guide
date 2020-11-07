@@ -19,7 +19,7 @@ Deployment in DigitalOcean :
 
 	- clone the github repo 
 	- Acces the root of the project and run docker-ompose up --build 
-	- Go to jenkins in :8081 and craete a job with the info in the screenshot : auto deploy job jenkins.png 
+	- Go to jenkins in :8081 and craete a job with the info in the screenshot : tomcat-jenkins/auto deploy job jenkins.png 
 	- Change the host of the tomcat setver to the container IP in the job info .
 
 	All setup now , just push your changes in the git repo and see your changes live after deployment .
