@@ -38,7 +38,7 @@ services:
     expose:
       - 8080
     restart: unless-stopped
-    build: ./
+    build: ./back-end/bug-tracker-ws
     ports:
       - "8080:8080"
     

@@ -1,4 +1,5 @@
 Guide to start : 
+
 	-Create project.
 	-Add dependency.
 	-Add application context.
@@ -28,7 +29,19 @@ Deployment in DigitalOcean :
 	All setup now , just push your changes in the git repo and see your changes live after deployment .
 	
 	
+	
 Jenkins password       | This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
+
+Ubunto machine
+
+	- install docker compose :   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	- install docker  : apt install docker.io
+	- docker mr 
+	- docker rmi
+	- docker images 
+	- docker ps
+	- docker stop
 
 	
 	
