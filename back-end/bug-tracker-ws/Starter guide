@@ -42,7 +42,11 @@ Ubunto machine
 	- docker images 
 	- docker ps
 	- docker stop
+	- docker run -d -p 80:80 hnhn/springapp > run a image on a port 
+	- docker exec -it  goofy_satoshi bash : acces containner terminal
+	- docker pull image-name : pull a image from docker hub 
+	- docker build - t hnhn/hnhn . : build the image 
 
 	
-	
-	
+jenkins user hnada hnada$ssh
+
