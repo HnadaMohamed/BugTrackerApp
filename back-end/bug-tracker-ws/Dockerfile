@@ -1,6 +1,6 @@
 # we are extending everything from tomcat:9.0 image ...
 
-FROM tomcat:jdk8
+FROM tomcat:9.0
 
 # Move .dist to webapps
   RUN mv /usr/local/tomcat/webapps/ /usr/local/tomcat/webappstemp/
@@ -14,4 +14,4 @@ COPY tomcat-jenkins/tomcat-users.xml /usr/local/tomcat/conf/
 COPY tomcat-jenkins/context.xml /usr/local/tomcat/webapps/manager/META-INF/
 COPY tomcat-jenkins/context.xml /usr/local/tomcat/webapps/host-manager/META-INF/
 
-ENTRYPOINT ["java","-jar","/usr/local/tomcat/webapps/bug-tracker-ws-0.1.war"]
+CMD ["catalina.sh","run"]

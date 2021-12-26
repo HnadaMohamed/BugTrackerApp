@@ -34,7 +34,7 @@ services:
     
   app:
     container_name: bugtracker
-    image: tomcat:jdk8
+    image: tomcat:9.0
     expose:
       - 8080
     restart: unless-stopped
