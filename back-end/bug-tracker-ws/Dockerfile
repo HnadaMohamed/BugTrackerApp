@@ -7,11 +7,11 @@ FROM tomcat:jdk8
   RUN mv /usr/local/tomcat/webapps.dist/ /usr/local/tomcat/webapps/
 
 # COPY my war to  docker-tomcat
-COPY target/bug-tracker-ws-0.1.war app.war
+COPY target/bug-tracker-ws-0.1.war /usr/local/tomcat/webapps/
 
 # Update users and auth manager
 COPY tomcat-jenkins/tomcat-users.xml /usr/local/tomcat/conf/
 COPY tomcat-jenkins/context.xml /usr/local/tomcat/webapps/manager/META-INF/
 COPY tomcat-jenkins/context.xml /usr/local/tomcat/webapps/host-manager/META-INF/
 
-ENTRYPOINT ["java","-jar","app.war"]
+ENTRYPOINT ["java","-jar","/usr/local/tomcat/webapps/bug-tracker-ws-0.1.war"]
