@@ -46,7 +46,10 @@ Ubunto machine
 	- docker exec -it  goofy_satoshi bash : acces containner terminal
 	- docker pull image-name : pull a image from docker hub 
 	- docker build - t hnhn/hnhn . : build the image 
-
+	- docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+	- docker tag tomcat-hn:latest  hnadadoc/tomcat-hn:latest
+	- docker push hnadadoc/tomcat-hn:latest
+	- docker login
 	
 jenkins user hnada hnada$ssh
 
